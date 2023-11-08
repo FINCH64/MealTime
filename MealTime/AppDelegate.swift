@@ -2,20 +2,21 @@
 //  AppDelegate.swift
 //  MealTime
 //
-//  Created by Ivan Akulov on 10/02/2020.
-//  Copyright © 2020 Ivan Akulov. All rights reserved.
-//
+//  Created by f1nch on 8.11.23.
 
 import UIKit
+import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var coreDataStack = CoreDataStack()
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
     }
-
+    
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
